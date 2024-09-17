@@ -1,0 +1,76 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*-------------------   Inicio Flex   --------------------*/
+/* Dictionary
+Drctn = Direction
+col = Column
+rvs = reverse
+*/
+
+.flex{
+    display: flex;
+}
+
+.flexDrctn-col{
+    flex-direction: column;
+}
+
+.flexDrctn-col-rvs{
+    flex-direction: column-reverse;
+}
+
+.flexDrctn-row{
+    flex-direction: row;
+}
+
+.flexDrctn-row-rvs{
+    flex-direction: row-reverse;
+}
+
+.flexWrap{
+    flex-wrap: wrap;
+}
+
+.flexNowrap{
+    flex-wrap: nowrap;
+}
+
+.flexWrap-rvs{
+    flex-wrap: wrap-reverse;
+}
+
+/*-------------------   Fin Flex   --------------------*/
+
+/*-------------------   Inicio Colores   --------------------*/
+/* Dictionary
+bkgrd = background
+prim = primary
+sec = secondary
+ter = tertiary 
+*/
+
+.bkgrdColor-grey{
+    background-color: #202020;
+}
+
+.bkgrdColor-green-prim{
+    background-color: #1b2e28;
+}
+
+.bkgrdColor-green-sec{
+     background-color: #1c4a47;
+}
+
+.bkgrdColor-green-ter{
+    background-color: #007261;
+}
+
+.bkgrdColor-blue{
+    background-color: #b1d2db;
+}
+
+/*-------------------   Fin Colores   --------------------*/
+
