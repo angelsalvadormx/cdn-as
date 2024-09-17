@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://angelsalvadormx.github.io/cdn/natasha-framework/nat.css">
+  <style>
+    body,
+    html {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <script src="./js/builderSite.js"></script>
+  <script>
+    const templateInvitation1 = {
+      "sections": [
+        {
+          "className": ['w-100', 'h-100', 'd-block','txt-white'],
+          "type": 'seccion',
+          "items": [
+            {
+              "type": "titulo",
+              "content": "Holaa",
+              "className": ['bg-primary', 'w-100', 'd-block']
+            }
+          ]
+        },
+        {
+          "className": ['w-100', 'bg-secondary', 'h-100', 'txt-white', 'd-flex', 'justify-content-around', 'flex-direction-column'],
+          "type": "div",
+          "attributes": {
+            "data-custom": "customValue4",
+            "role": "contentinfo"
+          },
+          "items": [
+            { "type": "label", "content": "Galeria", "className": ['txt-white'] },
+            { "type": "label", "content": "Contacto" }
+          ]
+        },
+      ]
+    };
+
+    window.addEventListener('load', function () {
+      createSite(templateInvitation1);
+    });
+
+  </script>
+</body>
+
+</html>
