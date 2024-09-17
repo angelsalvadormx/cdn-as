@@ -30,13 +30,13 @@ function createElementSite(item) {
   }
 
   // Agregar el ID si está definido en el JSON
-  if (section.id) {
+  if (item.id) {
     contentElement.id = section.id;
   }
 
   // Agregar atributos extra si están definidos
-  if (section.attributes) {
-    Object.keys(section.attributes).forEach(attr => {
+  if (item.attributes) {
+    Object.keys(item.attributes).forEach(attr => {
       contentElement.setAttribute(attr, section.attributes[attr]);
     });
   }
