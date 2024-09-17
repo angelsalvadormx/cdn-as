@@ -31,13 +31,13 @@ function createElementSite(item) {
 
   // Agregar el ID si está definido en el JSON
   if (item.id) {
-    contentElement.id = section.id;
+    contentElement.id = item.id;
   }
 
   // Agregar atributos extra si están definidos
   if (item.attributes) {
     Object.keys(item.attributes).forEach(attr => {
-      contentElement.setAttribute(attr, section.attributes[attr]);
+      contentElement.setAttribute(attr, item.attributes[attr]);
     });
   }
 
