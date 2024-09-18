@@ -20,20 +20,15 @@
 
   <script src="./js/builderSite.js"></script>
   <script>
-      var templateInvitation1 = '';
-      
+
+    window.addEventListener('load', function () {
       fetch('https://qa.colxsoft.com/invitaciones/json/cecilia_&_pedro.php')
       .then(res => res.json())
       .then(out => {
-        templateInvitation1 = out.data;
+        createSite(out.data);
         console.log('Checkout this JSON! ', out)
       })
       .catch(err => console.log(err));
-     
-
-    window.addEventListener('load', function () {
-      console.log(templateInvitation1)
-      createSite(templateInvitation1);
     });
 
   </script>
