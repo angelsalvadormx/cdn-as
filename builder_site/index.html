@@ -22,10 +22,10 @@
   <script>
       var templateInvitation1 = '';
       
-      fetch('https://qa.colxsoft.com/invitaciones/json/cecilia_&_pedro.json')
+      fetch('https://qa.colxsoft.com/invitaciones/json/cecilia_&_pedro.php')
       .then(res => res.json())
       .then(out => {
-        templateInvitation1 = out;
+        templateInvitation1 = out.data;
         console.log('Checkout this JSON! ', out)
       })
       .catch(err => console.log(err));
