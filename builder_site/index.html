@@ -20,35 +20,19 @@
 
   <script src="./js/builderSite.js"></script>
   <script>
-    const templateInvitation1 = {
-      "sections": [
-        {
-          "className": ['w-100', 'h-100', 'd-block','txt-white'],
-          "type": 'seccion',
-          "items": [
-            {
-              "type": "titulo",
-              "content": "Holaa",
-              "className": ['bg-primary', 'w-100', 'd-block']
-            }
-          ]
-        },
-        {
-          "className": ['w-100', 'bg-secondary', 'h-100', 'txt-white', 'd-flex', 'justify-content-around', 'flex-direction-column'],
-          "type": "div",
-          "attributes": {
-            "data-custom": "customValue4",
-            "role": "contentinfo"
-          },
-          "items": [
-            { "type": "label", "content": "Galeria", "className": ['txt-white'] },
-            { "type": "label", "content": "Contacto" }
-          ]
-        },
-      ]
-    };
+      var templateInvitation1 = '';
+      
+      fetch('https://qa.colxsoft.com/invitaciones/json/cecilia_&_pedro.json')
+      .then(res => res.json())
+      .then(out => {
+        templateInvitation1 = out;
+        console.log('Checkout this JSON! ', out))
+      }
+      .catch(err => console.log(err));
+     
 
     window.addEventListener('load', function () {
+      console.log(templateInvitation1)
       createSite(templateInvitation1);
     });
 
