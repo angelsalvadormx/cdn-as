@@ -46,3 +46,24 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+/* Para pantallas medianas (tablets y pantallas entre 768px y 1024px) */
+@media (max-width: 1024px) {
+  .gallery-as {
+      grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  }
+}
+
+/* Para pantallas pequeñas (teléfonos grandes o tablets pequeñas entre 600px y 768px) */
+@media (max-width: 768px) {
+  .gallery-as {
+      grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  }
+}
+
+/* Para pantallas muy pequeñas (teléfonos pequeños menos de 600px) */
+@media (max-width: 600px) {
+  .gallery-as {
+      grid-template-columns: 1fr; /* 1 columna */
+  }
+}
