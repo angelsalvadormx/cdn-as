@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+
+.gallery-as {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-as-item {
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+  height: 200px;
+}
+
+/* Diferentes tamaños de imágenes */
+.gallery-as-item.wide {
+  grid-column: span 2;
+}
+
+.gallery-as-item.tall {
+  grid-row: span 2;
+  height: 410px;
+  /* Ajuste de altura en proporción */
+}
+
+
+/* Ajustar la galería para que quede debajo del título */
+.gallery-as {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
