@@ -1,0 +1,14 @@
+[
+  {"src": "image1.jpg", "class": "tall"},
+  {"src": "image2.jpg", "class": ""},
+  {"src": "image3.jpg", "class": "wide"},
+  {"src": "image4.jpg", "class": ""},
+  {"src": "image5.jpg", "class": ""},
+  {"src": "image6.jpg", "class": ""},
+  {"src": "image7.jpg", "class": ""},
+  {"src": "image8.jpg", "class": "wide"},
+  {"src": "image9.jpg", "class": ""},
+  {"src": "image10.jpg", "class": "tall"},
+  {"src": "image11.jpg", "class": ""},
+  {"src": "image12.jpg", "class": "wide"}
+]
