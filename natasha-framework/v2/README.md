@@ -1,5 +1,5 @@
-
-# Documentación de CSS
+#### Versión: V2 
+# Documentación V2 Natasha CSS Framework
 
 Esta documentación detalla las clases y estilos definidos en el archivo CSS utilizado para facilitar la creación de sitios web.
 
