@@ -508,9 +508,7 @@ h3 {
 }
 
 @media (max-width: 768px) {
-    .d-flex {
-        flex-direction: column;
-    }
+
 
     .h2 {
         font-size: 1.25rem;
